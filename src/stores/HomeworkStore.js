@@ -5,7 +5,7 @@ class HomeworkStore {
   homework = 'Homework';
 
   @action
-  changeHomework = data => {
+  changeHomework = (data) => {
     this.homework = data;
   };
 
@@ -15,3 +15,4 @@ class HomeworkStore {
   };
 }
 export default HomeworkStore;
+export const homeworkStore = new HomeworkStore();
